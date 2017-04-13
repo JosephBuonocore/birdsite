@@ -12,14 +12,81 @@
 </head>
 
 <body>
-  <!--Nav Bar-->
-  <div class = "navbar" id = "mainnav">
-    <a href = "index.html">Home</a>
-    <a href = "search.html">Search</a>
-    <a href = "nearby.html">Nearby Birds</a>
-    <a href = "profile.html">Profile</a>
+
+  <div class = "background">
+    <!--Nav Bar-->
+    <div class = "navbar" id = "mainnav">
+      <a href = "index.html">Home</a>
+      <a href = "search.html">Search</a>
+      <a href = "nearby.html">Nearby Birds</a>
+      <a href = "profile.html">Profile</a>
+    </div>
+
+    <div class = "textbody">
+
+      <h1>Search for Nearby Birds</h1>
+      <!--Introductory Paragraph-->
+      <p class = "intro">text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text texttext text text text text text
+        text text text text text text text text text text text text text text text text text text text texttext text</p>
+
+      <br />
+      <br />
+      <h3>Search by State</h3>
+
+      <div class="dropdown">
+        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#liststateshere">List states here...</a>
+          <a href="#alabama">Alabama</a>
+          <a href="#alaska">Alaska</a>
+          <a href="#etc">etc...</a>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Search by Region</h3>
+
+      <div class="dropdown">
+        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+        <div id="myDropdown" class="dropdown-content2">
+          <a href="#listregionshere">List regions here...</a>
+          <a href="#northwest">Northwest</a>
+          <a href="#south">South</a>
+          <a href="#etc">etc...</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+      <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+    </div>
   </div>
-<p>You are in the nearby birds section.</p>
 </body>
 
 </html>
