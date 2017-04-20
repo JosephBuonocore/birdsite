@@ -7,13 +7,16 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-<title>The Birds - Main</title>
+<title>The Birds - Search</title>
 
 </head>
 
 <body>
 
     <div class = "background">
+      <div class = "title">
+        <p id = "title">The Birds: A quick web guide for all things avian</p>
+      </div>
       <!--Nav Bar-->
       <div class = "navbar" id = "mainnav">
         <a href = "index.html">Home</a>
@@ -24,25 +27,20 @@
 
       <div class = "textbody">
         <!--Title of page-->
+
+        <p class = "intro">On this page you will find multiple search bars so that you may find a bird that you are looking for based on its name, or traits such as color, size, and type of bird.  Explore below to find your bird!</p>
         <h1>Search by Name</h1>
 
         <br />
 
-        <input type="text" name="search" placeholder="Search Names...">
+        <input type="text" name="search" placeholder="Search Names..." style = "width: 25%; height: 30px;">
         <!--Introductory Paragraph-->
-        <p class = "intro">text text text text text text text text text text text text text text text text text
-          text text text text text text text text text text text text text text text text text text text text
-          text text text text text text text text text text text text text text texttext text text text text text
-          text text text text text text text text text text text text text text text text text text text texttext text</p>
-
-        <br />
-        <br />
         <h1>Search by Traits</h1>
 
         <h3>Search by Color</h3>
 
         <div class="dropdown">
-          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search by Color...">
           <div id="myDropdown" class="dropdown-content">
             <a href="#black">Black</a>
             <a href="#white">White</a>
@@ -59,7 +57,7 @@
         <h3>Search by Size</h3>
 
         <div class="dropdown">
-          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search by Size...">
           <div id="myDropdown" class="dropdown-content2">
             <a href="#black">Small</a>
             <a href="#white">Medium</a>
@@ -72,7 +70,7 @@
         <h3>Search by Type</h3>
 
         <div class="dropdown">
-          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+          <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search by Bird Type...">
           <div id="myDropdown" class="dropdown-content3">
             <a href="#blackbirds">Blackbirds</a>
             <a href="#chickadees">Chickadees</a>
@@ -113,10 +111,6 @@
         }
         </script>
 
-        <p class = "intro">text text text text text text text text text text text text text text text text text
-          text text text text text text text text text text text text text text text text text text text text
-          text text text text text text text text text text text text text text texttext text text text text text
-          text text text text text text text text text text text text text text text text text text text texttext text</p>
       </div>
     </div>
 

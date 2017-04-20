@@ -7,13 +7,16 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-<title>The Birds - Main</title>
+<title>The Birds - Nearby</title>
 
 </head>
 
 <body>
 
   <div class = "background">
+    <div class = "title">
+      <p id = "title">The Birds: A quick web guide for all things avian</p>
+    </div>
     <!--Nav Bar-->
     <div class = "navbar" id = "mainnav">
       <a href = "index.html">Home</a>
@@ -26,17 +29,12 @@
 
       <h1>Search for Nearby Birds</h1>
       <!--Introductory Paragraph-->
-      <p class = "intro">text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text texttext text text text text text
-        text text text text text text text text text text text text text text text text text text text texttext text</p>
+      <p class = "intro">Use the search bars below to search for birds you have seen by state (i.e. Alabama, New Jersey, California, etc.) or by region (i.e. Mid-Atlantic, North West, South East, etc.).  Simply select from the drop down bars below to begin your search and add to your personalized catalog!</p>
 
-      <br />
-      <br />
       <h3>Search by State</h3>
 
       <div class="dropdown">
-        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search by State...">
         <div id="myDropdown" class="dropdown-content">
           <a href="#liststateshere">List states here...</a>
           <a href="#alabama">Alabama</a>
@@ -50,7 +48,7 @@
       <h3>Search by Region</h3>
 
       <div class="dropdown">
-        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search Names...">
+        <input type="text" name="search" onclick="myFunction()" class="dropbtn" id = "myInput" onkeyup="filterFunction()" placeholder="Search by Region...">
         <div id="myDropdown" class="dropdown-content2">
           <a href="#listregionshere">List regions here...</a>
           <a href="#northwest">Northwest</a>
